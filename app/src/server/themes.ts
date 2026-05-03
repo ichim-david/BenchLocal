@@ -1,116 +1,88 @@
-import { accessSync, promises as fs } from "node:fs";
-import path from "node:path";
-import { fileURLToPath } from "node:url";
+import { promises as fs } from 'node:fs';
+import path from 'node:path';
 import type {
-	BenchLocalThemeDefinition,
-	BenchLocalThemeDescriptor,
-} from "@benchlocal/core";
+  BenchLocalThemeDefinition,
+  BenchLocalThemeDescriptor,
+} from '@benchlocal/core';
 import {
-	getThemeStorageDir,
-	loadThemeDefinitionFromFile,
-} from "@benchlocal/core";
-
-function getBenchLocalWorkspaceRoot(): string {
-	return path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../..");
-}
+  getThemeStorageDir,
+  loadThemeDefinitionFromFile,
+} from '@benchlocal/core';
+import { resolveBuiltInThemesDir } from './path-resolution';
 
 function getBuiltInThemesDir(): string {
-	// Check for a themes directory next to the project root
-	const workspaceRoot = getBenchLocalWorkspaceRoot();
-	const workspaceThemes = path.join(workspaceRoot, "themes");
-
-	// For the server, we also check a bundled themes directory
-	const bundledThemes = path.join(
-		path.dirname(fileURLToPath(import.meta.url)),
-		"../../themes",
-	);
-
-	// Prefer workspace themes if they exist
-	try {
-		accessSync(workspaceThemes);
-		return workspaceThemes;
-	} catch {
-		// Fall back to bundled
-	}
-
-	try {
-		accessSync(bundledThemes);
-		return bundledThemes;
-	} catch {
-		// Last resort: workspace
-		return workspaceThemes;
-	}
+  return resolveBuiltInThemesDir();
 }
 
 async function listThemeFiles(targetDir: string): Promise<string[]> {
-	try {
-		const entries = await fs.readdir(targetDir, { withFileTypes: true });
-		return entries
-			.filter((entry) => entry.isFile() && entry.name.endsWith(".json"))
-			.map((entry) => path.join(targetDir, entry.name));
-	} catch {
-		return [];
-	}
+  try {
+    const entries = await fs.readdir(targetDir, { withFileTypes: true });
+    return entries
+      .filter((entry) => entry.isFile() && entry.name.endsWith('.json'))
+      .map((entry) => path.join(targetDir, entry.name));
+  } catch {
+    return [];
+  }
 }
 
 export async function listAvailableThemes(): Promise<
-	BenchLocalThemeDescriptor[]
+  BenchLocalThemeDescriptor[]
 > {
-	const builtInFiles = await listThemeFiles(getBuiltInThemesDir());
-	const userDir = getThemeStorageDir();
-	await fs.mkdir(userDir, { recursive: true });
-	const userFiles = await listThemeFiles(userDir);
+  const builtInFiles = await listThemeFiles(getBuiltInThemesDir());
+  const userDir = getThemeStorageDir();
+  await fs.mkdir(userDir, { recursive: true });
+  const userFiles = await listThemeFiles(userDir);
 
-	const themes: BenchLocalThemeDescriptor[] = [];
+  const themes: BenchLocalThemeDescriptor[] = [];
 
-	for (const filePath of builtInFiles) {
-		try {
-			const theme = await loadThemeDefinitionFromFile(filePath);
-			themes.push({
-				id: theme.id,
-				name: theme.name,
-				colorScheme: theme.colorScheme,
-				source: "builtin",
-				path: filePath,
-			});
-		} catch {
-			// Skip invalid theme files.
-		}
-	}
+  for (const filePath of builtInFiles) {
+    try {
+      const theme = await loadThemeDefinitionFromFile(filePath);
+      themes.push({
+        id: theme.id,
+        name: theme.name,
+        colorScheme: theme.colorScheme,
+        source: 'builtin',
+        path: filePath,
+      });
+    } catch {
+      // Skip invalid theme files.
+    }
+  }
 
-	for (const filePath of userFiles) {
-		try {
-			const theme = await loadThemeDefinitionFromFile(filePath);
-			themes.push({
-				id: theme.id,
-				name: theme.name,
-				colorScheme: theme.colorScheme,
-				source: "user",
-				path: filePath,
-			});
-		} catch {
-			// Skip invalid theme files.
-		}
-	}
+  for (const filePath of userFiles) {
+    try {
+      const theme = await loadThemeDefinitionFromFile(filePath);
+      themes.push({
+        id: theme.id,
+        name: theme.name,
+        colorScheme: theme.colorScheme,
+        source: 'user',
+        path: filePath,
+      });
+    } catch {
+      // Skip invalid theme files.
+    }
+  }
 
-	return themes.sort((left, right) => {
-		if (left.source !== right.source) {
-			return left.source === "builtin" ? -1 : 1;
-		}
+  return themes.sort((left, right) => {
+    if (left.source !== right.source) {
+      return left.source === 'builtin' ? -1 : 1;
+    }
 
-		return left.name.localeCompare(right.name);
-	});
+    return left.name.localeCompare(right.name);
+  });
 }
 
 export async function loadAvailableTheme(
-	themeId: string,
+  themeId: string,
 ): Promise<BenchLocalThemeDefinition | null> {
-	const themes = await listAvailableThemes();
-	const match = themes.find((theme) => theme.id === themeId);
+  const themes = await listAvailableThemes();
+  const match = themes.find((theme) => theme.id === themeId);
 
-	if (!match?.path) {
-		return null;
-	}
+  if (!match?.path) {
+    return null;
+  }
 
-	return loadThemeDefinitionFromFile(match.path);
+  return loadThemeDefinitionFromFile(match.path);
 }

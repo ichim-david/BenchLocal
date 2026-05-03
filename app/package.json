@@ -24,8 +24,9 @@
     "web:dev:renderer": "vite --config vite.config.web.ts",
     "web:dev:server": "tsx watch src/server/index.ts",
     "web:dev": "concurrently \"npm run web:dev:renderer\" \"npm run web:dev:server\"",
-    "web:build": "npm run build:compile && vite build --config vite.config.web.ts && esbuild src/server/index.ts --bundle --platform=node --target=node20 --format=esm --outdir=../dist/server --external:@benchlocal/*",
-    "web:start": "node ../dist/server/index.js"
+    "web:build": "npm run build:compile && vite build --config vite.config.web.ts && esbuild src/server/index.ts --bundle --platform=node --target=node20 --format=esm --packages=external --outfile=../dist/server/index.mjs --external:@benchlocal/*",
+    "preweb:start": "npm run web:build",
+    "web:start": "node ../dist/server/index.mjs"
   },
   "dependencies": {
     "electron-updater": "^6.6.2",
