@@ -1,0 +1,301 @@
+[
+  {
+    "name": "python",
+    "ok": true,
+    "checks": [
+      {
+        "name": "sse_events_present",
+        "ok": true,
+        "detail": "164"
+      },
+      {
+        "name": "no_sse_json_errors",
+        "ok": true,
+        "detail": "[]"
+      },
+      {
+        "name": "finish_reason_tool_calls",
+        "ok": true,
+        "detail": "['tool_calls']"
+      },
+      {
+        "name": "one_tool_call",
+        "ok": true,
+        "detail": "1"
+      },
+      {
+        "name": "tool_name_write",
+        "ok": true,
+        "detail": "'write'"
+      },
+      {
+        "name": "tool_arguments_valid_json",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "path_is_string",
+        "ok": true,
+        "detail": "'stream-test-python.py'"
+      },
+      {
+        "name": "content_is_string",
+        "ok": true,
+        "detail": "str"
+      },
+      {
+        "name": "path_has_no_trailing_newline",
+        "ok": true,
+        "detail": "'stream-test-python.py'"
+      },
+      {
+        "name": "path_mentions_expected_filename",
+        "ok": true,
+        "detail": "'stream-test-python.py'"
+      },
+      {
+        "name": "content_not_empty",
+        "ok": true,
+        "detail": "512"
+      },
+      {
+        "name": "content_preserves_newlines",
+        "ok": true,
+        "detail": "'\"\"\"\\nThis module provides a function to calculate the nth Fibonacci number.\\n\"\"\"\\n\\n\\ndef fibonacci(n):\\n    \"\"\"Calculate the '"
+      },
+      {
+        "name": "python_ast_parse",
+        "ok": true,
+        "detail": ""
+      }
+    ]
+  },
+  {
+    "name": "rust",
+    "ok": true,
+    "checks": [
+      {
+        "name": "sse_events_present",
+        "ok": true,
+        "detail": "102"
+      },
+      {
+        "name": "no_sse_json_errors",
+        "ok": true,
+        "detail": "[]"
+      },
+      {
+        "name": "finish_reason_tool_calls",
+        "ok": true,
+        "detail": "['tool_calls']"
+      },
+      {
+        "name": "one_tool_call",
+        "ok": true,
+        "detail": "1"
+      },
+      {
+        "name": "tool_name_write",
+        "ok": true,
+        "detail": "'write'"
+      },
+      {
+        "name": "tool_arguments_valid_json",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "path_is_string",
+        "ok": true,
+        "detail": "'stream-test-rust.rs'"
+      },
+      {
+        "name": "content_is_string",
+        "ok": true,
+        "detail": "str"
+      },
+      {
+        "name": "path_has_no_trailing_newline",
+        "ok": true,
+        "detail": "'stream-test-rust.rs'"
+      },
+      {
+        "name": "path_mentions_expected_filename",
+        "ok": true,
+        "detail": "'stream-test-rust.rs'"
+      },
+      {
+        "name": "content_not_empty",
+        "ok": true,
+        "detail": "224"
+      },
+      {
+        "name": "content_preserves_newlines",
+        "ok": true,
+        "detail": "'// Example: factorial(5) = 5 * 4 * 3 * 2 * 1 = 120\\n\\nfn factorial(n: u64) -> u64 {\\n    if n == 0 {\\n        1\\n    } else {'"
+      },
+      {
+        "name": "rust_contains_main",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "rust_contains_factorial",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "rustc_metadata_check",
+        "ok": true,
+        "detail": "skipped: rustc not installed"
+      }
+    ]
+  },
+  {
+    "name": "typescript",
+    "ok": true,
+    "checks": [
+      {
+        "name": "sse_events_present",
+        "ok": true,
+        "detail": "100"
+      },
+      {
+        "name": "no_sse_json_errors",
+        "ok": true,
+        "detail": "[]"
+      },
+      {
+        "name": "finish_reason_tool_calls",
+        "ok": true,
+        "detail": "['tool_calls']"
+      },
+      {
+        "name": "one_tool_call",
+        "ok": true,
+        "detail": "1"
+      },
+      {
+        "name": "tool_name_write",
+        "ok": true,
+        "detail": "'write'"
+      },
+      {
+        "name": "tool_arguments_valid_json",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "path_is_string",
+        "ok": true,
+        "detail": "'stream-test-typescript.ts'"
+      },
+      {
+        "name": "content_is_string",
+        "ok": true,
+        "detail": "str"
+      },
+      {
+        "name": "path_has_no_trailing_newline",
+        "ok": true,
+        "detail": "'stream-test-typescript.ts'"
+      },
+      {
+        "name": "path_mentions_expected_filename",
+        "ok": true,
+        "detail": "'stream-test-typescript.ts'"
+      },
+      {
+        "name": "content_not_empty",
+        "ok": true,
+        "detail": "279"
+      },
+      {
+        "name": "content_preserves_newlines",
+        "ok": true,
+        "detail": "'export interface User {\\n  id: number;\\n  name: string;\\n  email: string;\\n}\\n\\nexport function formatUser(user: User): string'"
+      },
+      {
+        "name": "typescript_has_exports",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "tsc_noemit_check",
+        "ok": true,
+        "detail": "skipped: tsc not installed"
+      }
+    ]
+  },
+  {
+    "name": "json",
+    "ok": true,
+    "checks": [
+      {
+        "name": "sse_events_present",
+        "ok": true,
+        "detail": "86"
+      },
+      {
+        "name": "no_sse_json_errors",
+        "ok": true,
+        "detail": "[]"
+      },
+      {
+        "name": "finish_reason_tool_calls",
+        "ok": true,
+        "detail": "['tool_calls']"
+      },
+      {
+        "name": "one_tool_call",
+        "ok": true,
+        "detail": "1"
+      },
+      {
+        "name": "tool_name_write",
+        "ok": true,
+        "detail": "'write'"
+      },
+      {
+        "name": "tool_arguments_valid_json",
+        "ok": true,
+        "detail": ""
+      },
+      {
+        "name": "path_is_string",
+        "ok": true,
+        "detail": "'stream-test-json.json'"
+      },
+      {
+        "name": "content_is_string",
+        "ok": true,
+        "detail": "str"
+      },
+      {
+        "name": "path_has_no_trailing_newline",
+        "ok": true,
+        "detail": "'stream-test-json.json'"
+      },
+      {
+        "name": "path_mentions_expected_filename",
+        "ok": true,
+        "detail": "'stream-test-json.json'"
+      },
+      {
+        "name": "content_not_empty",
+        "ok": true,
+        "detail": "195"
+      },
+      {
+        "name": "content_preserves_newlines",
+        "ok": true,
+        "detail": "'{\\n  \"project\": \"stream-test\",\\n  \"version\": \"1.0.0\",\\n  \"features\": [\\n    \"logging\",\\n    \"monitoring\",\\n    \"alerting\"\\n  ],'"
+      },
+      {
+        "name": "json_content_parse",
+        "ok": true,
+        "detail": ""
+      }
+    ]
+  }
+]

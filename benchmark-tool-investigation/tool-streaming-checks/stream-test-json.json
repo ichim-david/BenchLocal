@@ -1,0 +1,14 @@
+{
+  "project": "stream-test",
+  "version": "1.0.0",
+  "features": [
+    "logging",
+    "monitoring",
+    "alerting"
+  ],
+  "thresholds": {
+    "warn": 80,
+    "error": 95
+  },
+  "enabled": true
+}

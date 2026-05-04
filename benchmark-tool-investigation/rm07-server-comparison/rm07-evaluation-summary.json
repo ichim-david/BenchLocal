@@ -1,0 +1,450 @@
+[
+  {
+    "file": "/Users/ichimdav/work/mlx-lm/reasonmath-rm07-comparison/mlx-lm-8081-max512-stream.parsed.json",
+    "finish_reasons": [
+      "length"
+    ],
+    "chars": 1312,
+    "answer_line": "",
+    "answer_points": 0,
+    "matched_checkpoints": [
+      "total_distance=360",
+      "total_time=7.5"
+    ],
+    "trace_points": 1,
+    "score": 15,
+    "tail": "{75} $$\nDivide numerator and denominator by 25:\n$$ \\frac{3600 \\div 25}{75 \\div 25} = \\frac{144}{3} = 48 $$\n\nAlternatively, using the harmonic mean formula for two equal distances ($d_1=d_2$):\n$$ v_{avg} = \\frac{2 v_1 v_2"
+  },
+  {
+    "file": "/Users/ichimdav/work/mlx-lm/reasonmath-rm07-comparison/mlx-lm-8081-max560-stream.parsed.json",
+    "finish_reasons": [
+      "length"
+    ],
+    "chars": 1387,
+    "answer_line": "",
+    "answer_points": 0,
+    "matched_checkpoints": [
+      "total_distance=360",
+      "total_time=7.5"
+    ],
+    "trace_points": 1,
+    "score": 15,
+    "tail": "div 25} = \\frac{144}{3} = 48 $$\n\nAlternatively, using the harmonic mean formula for two equal distances ($d_1=d_2$):\n$$ v_{avg} = \\frac{2 v_1 v_2}{v_1 + v_2} = \\frac{2 \\times 60 \\times 40}{60 + 40} = \\frac{4800}{100} = 4"
+  },
+  {
+    "file": "/Users/ichimdav/work/mlx-lm/reasonmath-rm07-comparison/mlx-lm-8081-max570-stream.parsed.json",
+    "finish_reasons": [
+      "length"
+    ],
+    "chars": 1406,
+    "answer_line": "",
+    "answer_points": 0,
+    "matched_checkpoints": [
+      "total_distance=360",
+      "total_time=7.5"
+    ],
+    "trace_points": 1,
+    "score": 15,
+    "tail": "}{3} = 48 $$\n\nAlternatively, using the harmonic mean formula for two equal distances ($d_1=d_2$):\n$$ v_{avg} = \\frac{2 v_1 v_2}{v_1 + v_2} = \\frac{2 \\times 60 \\times 40}{60 + 40} = \\frac{4800}{100} = 48 \\, \\text{km/h} $$"
+  },
+  {
+    "file": "/Users/ichimdav/work/mlx-lm/reasonmath-rm07-comparison/mlx-lm-8081-max572-stream.parsed.json",
+    "finish_reasons": [
+      "length"
+    ],
+    "chars": 1411,
+    "answer_line": "",
+    "answer_points": 0,
+    "matched_checkpoints": [
+      "total_distance=360",
+      "total_time=7.5"
+    ],
+    "trace_points": 1,
+    "score": 15,
+    "tail": "= 48 $$\n\nAlternatively, using the harmonic mean formula for two equal distances ($d_1=d_2$):\n$$ v_{avg} = \\frac{2 v_1 v_2}{v_1 + v_2} = \\frac{2 \\times 60 \\times 40}{60 + 40} = \\frac{4800}{100} = 48 \\, \\text{km/h} $$\n\nANS"
+  },
+  {
+    "file": "/Users/ichimdav/work/mlx-lm/reasonmath-rm07-comparison/mlx-lm-8081-max574-stream.parsed.json",
+    "finish_reasons": [
+      "length"
+    ],
+    "chars": 1415,
+    "answer_line": "",
+    "answer_points": 0,
+    "matched_checkpoints": [
+      "total_distance=360",
+      "total_time=7.5"
+    ],
+    "trace_points": 1,
+    "score": 15,
+    "tail": " $$\n\nAlternatively, using the harmonic mean formula for two equal distances ($d_1=d_2$):\n$$ v_{avg} = \\frac{2 v_1 v_2}{v_1 + v_2} = \\frac{2 \\times 60 \\times 40}{60 + 40} = \\frac{4800}{100} = 48 \\, \\text{km/h} $$\n\nANSWER:"
+  },
+  {
+    "file": "/Users/ichimdav/work/mlx-lm/reasonmath-rm07-comparison/mlx-lm-8081-max576-stream.parsed.json",
+    "finish_reasons": [
+      "length"
+    ],
+    "chars": 1417,
+    "answer_line": "ANSWER: 4",
+    "answer_points": 0,
+    "matched_checkpoints": [
+      "total_distance=360",
+      "total_time=7.5"
+    ],
+    "trace_points": 1,
+    "score": 15,
+    "tail": "$\n\nAlternatively, using the harmonic mean formula for two equal distances ($d_1=d_2$):\n$$ v_{avg} = \\frac{2 v_1 v_2}{v_1 + v_2} = \\frac{2 \\times 60 \\times 40}{60 + 40} = \\frac{4800}{100} = 48 \\, \\text{km/h} $$\n\nANSWER: 4"
+  },
+  {
+    "file": "/Users/ichimdav/work/mlx-lm/reasonmath-rm07-comparison/mlx-lm-8081-max578-stream.parsed.json",
+    "finish_reasons": [
+      "length"
+    ],
+    "chars": 1421,
+    "answer_line": "ANSWER: 48 km",
+    "answer_points": 0,
+    "matched_checkpoints": [
+      "total_distance=360",
+      "total_time=7.5"
+    ],
+    "trace_points": 1,
+    "score": 15,
+    "tail": "lternatively, using the harmonic mean formula for two equal distances ($d_1=d_2$):\n$$ v_{avg} = \\frac{2 v_1 v_2}{v_1 + v_2} = \\frac{2 \\times 60 \\times 40}{60 + 40} = \\frac{4800}{100} = 48 \\, \\text{km/h} $$\n\nANSWER: 48 km"
+  },
+  {
+    "file": "/Users/ichimdav/work/mlx-lm/reasonmath-rm07-comparison/mlx-lm-8081-max580-stream.parsed.json",
+    "finish_reasons": [
+      "stop"
+    ],
+    "chars": 1423,
+    "answer_line": "ANSWER: 48 km/h",
+    "answer_points": 2,
+    "matched_checkpoints": [
+      "total_distance=360",
+      "total_time=7.5"
+    ],
+    "trace_points": 1,
+    "score": 85,
+    "tail": "ernatively, using the harmonic mean formula for two equal distances ($d_1=d_2$):\n$$ v_{avg} = \\frac{2 v_1 v_2}{v_1 + v_2} = \\frac{2 \\times 60 \\times 40}{60 + 40} = \\frac{4800}{100} = 48 \\, \\text{km/h} $$\n\nANSWER: 48 km/h"
+  },
+  {
+    "file": "/Users/ichimdav/work/mlx-lm/reasonmath-rm07-comparison/mlx-lm-8081-max590-stream.parsed.json",
+    "finish_reasons": [
+      "stop"
+    ],
+    "chars": 1423,
+    "answer_line": "ANSWER: 48 km/h",
+    "answer_points": 2,
+    "matched_checkpoints": [
+      "total_distance=360",
+      "total_time=7.5"
+    ],
+    "trace_points": 1,
+    "score": 85,
+    "tail": "ernatively, using the harmonic mean formula for two equal distances ($d_1=d_2$):\n$$ v_{avg} = \\frac{2 v_1 v_2}{v_1 + v_2} = \\frac{2 \\times 60 \\times 40}{60 + 40} = \\frac{4800}{100} = 48 \\, \\text{km/h} $$\n\nANSWER: 48 km/h"
+  },
+  {
+    "file": "/Users/ichimdav/work/mlx-lm/reasonmath-rm07-comparison/mlx-lm-8081-max600-stream.parsed.json",
+    "finish_reasons": [
+      "stop"
+    ],
+    "chars": 1423,
+    "answer_line": "ANSWER: 48 km/h",
+    "answer_points": 2,
+    "matched_checkpoints": [
+      "total_distance=360",
+      "total_time=7.5"
+    ],
+    "trace_points": 1,
+    "score": 85,
+    "tail": "ernatively, using the harmonic mean formula for two equal distances ($d_1=d_2$):\n$$ v_{avg} = \\frac{2 v_1 v_2}{v_1 + v_2} = \\frac{2 \\times 60 \\times 40}{60 + 40} = \\frac{4800}{100} = 48 \\, \\text{km/h} $$\n\nANSWER: 48 km/h"
+  },
+  {
+    "file": "/Users/ichimdav/work/mlx-lm/reasonmath-rm07-comparison/mlx-lm-8081-max640-stream.parsed.json",
+    "finish_reasons": [
+      "stop"
+    ],
+    "chars": 1423,
+    "answer_line": "ANSWER: 48 km/h",
+    "answer_points": 2,
+    "matched_checkpoints": [
+      "total_distance=360",
+      "total_time=7.5"
+    ],
+    "trace_points": 1,
+    "score": 85,
+    "tail": "ernatively, using the harmonic mean formula for two equal distances ($d_1=d_2$):\n$$ v_{avg} = \\frac{2 v_1 v_2}{v_1 + v_2} = \\frac{2 \\times 60 \\times 40}{60 + 40} = \\frac{4800}{100} = 48 \\, \\text{km/h} $$\n\nANSWER: 48 km/h"
+  },
+  {
+    "file": "/Users/ichimdav/work/mlx-lm/reasonmath-rm07-comparison/mlx-lm-8081-max680-stream.parsed.json",
+    "finish_reasons": [
+      "stop"
+    ],
+    "chars": 1423,
+    "answer_line": "ANSWER: 48 km/h",
+    "answer_points": 2,
+    "matched_checkpoints": [
+      "total_distance=360",
+      "total_time=7.5"
+    ],
+    "trace_points": 1,
+    "score": 85,
+    "tail": "ernatively, using the harmonic mean formula for two equal distances ($d_1=d_2$):\n$$ v_{avg} = \\frac{2 v_1 v_2}{v_1 + v_2} = \\frac{2 \\times 60 \\times 40}{60 + 40} = \\frac{4800}{100} = 48 \\, \\text{km/h} $$\n\nANSWER: 48 km/h"
+  },
+  {
+    "file": "/Users/ichimdav/work/mlx-lm/reasonmath-rm07-comparison/mlx-lm-8081-max720-stream.parsed.json",
+    "finish_reasons": [
+      "stop"
+    ],
+    "chars": 1423,
+    "answer_line": "ANSWER: 48 km/h",
+    "answer_points": 2,
+    "matched_checkpoints": [
+      "total_distance=360",
+      "total_time=7.5"
+    ],
+    "trace_points": 1,
+    "score": 85,
+    "tail": "ernatively, using the harmonic mean formula for two equal distances ($d_1=d_2$):\n$$ v_{avg} = \\frac{2 v_1 v_2}{v_1 + v_2} = \\frac{2 \\times 60 \\times 40}{60 + 40} = \\frac{4800}{100} = 48 \\, \\text{km/h} $$\n\nANSWER: 48 km/h"
+  },
+  {
+    "file": "/Users/ichimdav/work/mlx-lm/reasonmath-rm07-comparison/mlx-lm-8081-max768-stream.parsed.json",
+    "finish_reasons": [
+      "stop"
+    ],
+    "chars": 1423,
+    "answer_line": "ANSWER: 48 km/h",
+    "answer_points": 2,
+    "matched_checkpoints": [
+      "total_distance=360",
+      "total_time=7.5"
+    ],
+    "trace_points": 1,
+    "score": 85,
+    "tail": "ernatively, using the harmonic mean formula for two equal distances ($d_1=d_2$):\n$$ v_{avg} = \\frac{2 v_1 v_2}{v_1 + v_2} = \\frac{2 \\times 60 \\times 40}{60 + 40} = \\frac{4800}{100} = 48 \\, \\text{km/h} $$\n\nANSWER: 48 km/h"
+  },
+  {
+    "file": "/Users/ichimdav/work/mlx-lm/reasonmath-rm07-comparison/omlx-8000-max512-stream.parsed.json",
+    "finish_reasons": [
+      "length"
+    ],
+    "chars": 1309,
+    "answer_line": "",
+    "answer_points": 0,
+    "matched_checkpoints": [
+      "total_distance=360",
+      "total_time=7.5"
+    ],
+    "trace_points": 1,
+    "score": 15,
+    "tail": "75} $$\nDivide numerator and denominator by 25:\n$$ \\frac{3600 \\div 25}{75 \\div 25} = \\frac{144}{3} = 48 $$\n\nAlternatively, using the harmonic mean formula for two equal distances ($d_1=d_2$):\n$$ v_{avg} = \\frac{2v_1v_2}{v"
+  },
+  {
+    "file": "/Users/ichimdav/work/mlx-lm/reasonmath-rm07-comparison/omlx-8000-max560-stream.parsed.json",
+    "finish_reasons": [
+      "length"
+    ],
+    "chars": 1378,
+    "answer_line": "",
+    "answer_points": 0,
+    "matched_checkpoints": [
+      "total_distance=360",
+      "total_time=7.5"
+    ],
+    "trace_points": 1,
+    "score": 15,
+    "tail": "{75 \\div 25} = \\frac{144}{3} = 48 $$\n\nAlternatively, using the harmonic mean formula for two equal distances ($d_1=d_2$):\n$$ v_{avg} = \\frac{2v_1v_2}{v_1+v_2} = \\frac{2(60)(40)}{60+40} = \\frac{4800}{100} = 48 \\, \\text{km"
+  },
+  {
+    "file": "/Users/ichimdav/work/mlx-lm/reasonmath-rm07-comparison/omlx-8000-max570-stream.parsed.json",
+    "finish_reasons": [
+      "length"
+    ],
+    "chars": 1396,
+    "answer_line": "ANSWER: 48",
+    "answer_points": 0,
+    "matched_checkpoints": [
+      "total_distance=360",
+      "total_time=7.5"
+    ],
+    "trace_points": 1,
+    "score": 15,
+    "tail": "ac{144}{3} = 48 $$\n\nAlternatively, using the harmonic mean formula for two equal distances ($d_1=d_2$):\n$$ v_{avg} = \\frac{2v_1v_2}{v_1+v_2} = \\frac{2(60)(40)}{60+40} = \\frac{4800}{100} = 48 \\, \\text{km/h} $$\n\nANSWER: 48"
+  },
+  {
+    "file": "/Users/ichimdav/work/mlx-lm/reasonmath-rm07-comparison/omlx-8000-max572-stream.parsed.json",
+    "finish_reasons": [
+      "length"
+    ],
+    "chars": 1401,
+    "answer_line": "ANSWER: 48 km/h",
+    "answer_points": 2,
+    "matched_checkpoints": [
+      "total_distance=360",
+      "total_time=7.5"
+    ],
+    "trace_points": 1,
+    "score": 85,
+    "tail": "4}{3} = 48 $$\n\nAlternatively, using the harmonic mean formula for two equal distances ($d_1=d_2$):\n$$ v_{avg} = \\frac{2v_1v_2}{v_1+v_2} = \\frac{2(60)(40)}{60+40} = \\frac{4800}{100} = 48 \\, \\text{km/h} $$\n\nANSWER: 48 km/h"
+  },
+  {
+    "file": "/Users/ichimdav/work/mlx-lm/reasonmath-rm07-comparison/omlx-8000-max574-stream.parsed.json",
+    "finish_reasons": [
+      "stop"
+    ],
+    "chars": 1401,
+    "answer_line": "ANSWER: 48 km/h",
+    "answer_points": 2,
+    "matched_checkpoints": [
+      "total_distance=360",
+      "total_time=7.5"
+    ],
+    "trace_points": 1,
+    "score": 85,
+    "tail": "4}{3} = 48 $$\n\nAlternatively, using the harmonic mean formula for two equal distances ($d_1=d_2$):\n$$ v_{avg} = \\frac{2v_1v_2}{v_1+v_2} = \\frac{2(60)(40)}{60+40} = \\frac{4800}{100} = 48 \\, \\text{km/h} $$\n\nANSWER: 48 km/h"
+  },
+  {
+    "file": "/Users/ichimdav/work/mlx-lm/reasonmath-rm07-comparison/omlx-8000-max576-stream.parsed.json",
+    "finish_reasons": [
+      "stop"
+    ],
+    "chars": 1401,
+    "answer_line": "ANSWER: 48 km/h",
+    "answer_points": 2,
+    "matched_checkpoints": [
+      "total_distance=360",
+      "total_time=7.5"
+    ],
+    "trace_points": 1,
+    "score": 85,
+    "tail": "4}{3} = 48 $$\n\nAlternatively, using the harmonic mean formula for two equal distances ($d_1=d_2$):\n$$ v_{avg} = \\frac{2v_1v_2}{v_1+v_2} = \\frac{2(60)(40)}{60+40} = \\frac{4800}{100} = 48 \\, \\text{km/h} $$\n\nANSWER: 48 km/h"
+  },
+  {
+    "file": "/Users/ichimdav/work/mlx-lm/reasonmath-rm07-comparison/omlx-8000-max578-stream.parsed.json",
+    "finish_reasons": [
+      "stop"
+    ],
+    "chars": 1401,
+    "answer_line": "ANSWER: 48 km/h",
+    "answer_points": 2,
+    "matched_checkpoints": [
+      "total_distance=360",
+      "total_time=7.5"
+    ],
+    "trace_points": 1,
+    "score": 85,
+    "tail": "4}{3} = 48 $$\n\nAlternatively, using the harmonic mean formula for two equal distances ($d_1=d_2$):\n$$ v_{avg} = \\frac{2v_1v_2}{v_1+v_2} = \\frac{2(60)(40)}{60+40} = \\frac{4800}{100} = 48 \\, \\text{km/h} $$\n\nANSWER: 48 km/h"
+  },
+  {
+    "file": "/Users/ichimdav/work/mlx-lm/reasonmath-rm07-comparison/omlx-8000-max580-stream.parsed.json",
+    "finish_reasons": [
+      "stop"
+    ],
+    "chars": 1401,
+    "answer_line": "ANSWER: 48 km/h",
+    "answer_points": 2,
+    "matched_checkpoints": [
+      "total_distance=360",
+      "total_time=7.5"
+    ],
+    "trace_points": 1,
+    "score": 85,
+    "tail": "4}{3} = 48 $$\n\nAlternatively, using the harmonic mean formula for two equal distances ($d_1=d_2$):\n$$ v_{avg} = \\frac{2v_1v_2}{v_1+v_2} = \\frac{2(60)(40)}{60+40} = \\frac{4800}{100} = 48 \\, \\text{km/h} $$\n\nANSWER: 48 km/h"
+  },
+  {
+    "file": "/Users/ichimdav/work/mlx-lm/reasonmath-rm07-comparison/omlx-8000-max590-stream.parsed.json",
+    "finish_reasons": [
+      "stop"
+    ],
+    "chars": 1401,
+    "answer_line": "ANSWER: 48 km/h",
+    "answer_points": 2,
+    "matched_checkpoints": [
+      "total_distance=360",
+      "total_time=7.5"
+    ],
+    "trace_points": 1,
+    "score": 85,
+    "tail": "4}{3} = 48 $$\n\nAlternatively, using the harmonic mean formula for two equal distances ($d_1=d_2$):\n$$ v_{avg} = \\frac{2v_1v_2}{v_1+v_2} = \\frac{2(60)(40)}{60+40} = \\frac{4800}{100} = 48 \\, \\text{km/h} $$\n\nANSWER: 48 km/h"
+  },
+  {
+    "file": "/Users/ichimdav/work/mlx-lm/reasonmath-rm07-comparison/omlx-8000-max600-stream.parsed.json",
+    "finish_reasons": [
+      "stop"
+    ],
+    "chars": 1401,
+    "answer_line": "ANSWER: 48 km/h",
+    "answer_points": 2,
+    "matched_checkpoints": [
+      "total_distance=360",
+      "total_time=7.5"
+    ],
+    "trace_points": 1,
+    "score": 85,
+    "tail": "4}{3} = 48 $$\n\nAlternatively, using the harmonic mean formula for two equal distances ($d_1=d_2$):\n$$ v_{avg} = \\frac{2v_1v_2}{v_1+v_2} = \\frac{2(60)(40)}{60+40} = \\frac{4800}{100} = 48 \\, \\text{km/h} $$\n\nANSWER: 48 km/h"
+  },
+  {
+    "file": "/Users/ichimdav/work/mlx-lm/reasonmath-rm07-comparison/omlx-8000-max640-stream.parsed.json",
+    "finish_reasons": [
+      "stop"
+    ],
+    "chars": 1401,
+    "answer_line": "ANSWER: 48 km/h",
+    "answer_points": 2,
+    "matched_checkpoints": [
+      "total_distance=360",
+      "total_time=7.5"
+    ],
+    "trace_points": 1,
+    "score": 85,
+    "tail": "4}{3} = 48 $$\n\nAlternatively, using the harmonic mean formula for two equal distances ($d_1=d_2$):\n$$ v_{avg} = \\frac{2v_1v_2}{v_1+v_2} = \\frac{2(60)(40)}{60+40} = \\frac{4800}{100} = 48 \\, \\text{km/h} $$\n\nANSWER: 48 km/h"
+  },
+  {
+    "file": "/Users/ichimdav/work/mlx-lm/reasonmath-rm07-comparison/omlx-8000-max680-stream.parsed.json",
+    "finish_reasons": [
+      "stop"
+    ],
+    "chars": 1401,
+    "answer_line": "ANSWER: 48 km/h",
+    "answer_points": 2,
+    "matched_checkpoints": [
+      "total_distance=360",
+      "total_time=7.5"
+    ],
+    "trace_points": 1,
+    "score": 85,
+    "tail": "4}{3} = 48 $$\n\nAlternatively, using the harmonic mean formula for two equal distances ($d_1=d_2$):\n$$ v_{avg} = \\frac{2v_1v_2}{v_1+v_2} = \\frac{2(60)(40)}{60+40} = \\frac{4800}{100} = 48 \\, \\text{km/h} $$\n\nANSWER: 48 km/h"
+  },
+  {
+    "file": "/Users/ichimdav/work/mlx-lm/reasonmath-rm07-comparison/omlx-8000-max720-stream.parsed.json",
+    "finish_reasons": [
+      "stop"
+    ],
+    "chars": 1401,
+    "answer_line": "ANSWER: 48 km/h",
+    "answer_points": 2,
+    "matched_checkpoints": [
+      "total_distance=360",
+      "total_time=7.5"
+    ],
+    "trace_points": 1,
+    "score": 85,
+    "tail": "4}{3} = 48 $$\n\nAlternatively, using the harmonic mean formula for two equal distances ($d_1=d_2$):\n$$ v_{avg} = \\frac{2v_1v_2}{v_1+v_2} = \\frac{2(60)(40)}{60+40} = \\frac{4800}{100} = 48 \\, \\text{km/h} $$\n\nANSWER: 48 km/h"
+  },
+  {
+    "file": "/Users/ichimdav/work/mlx-lm/reasonmath-rm07-comparison/omlx-8000-max768-stream.parsed.json",
+    "finish_reasons": [
+      "stop"
+    ],
+    "chars": 1401,
+    "answer_line": "ANSWER: 48 km/h",
+    "answer_points": 2,
+    "matched_checkpoints": [
+      "total_distance=360",
+      "total_time=7.5"
+    ],
+    "trace_points": 1,
+    "score": 85,
+    "tail": "4}{3} = 48 $$\n\nAlternatively, using the harmonic mean formula for two equal distances ($d_1=d_2$):\n$$ v_{avg} = \\frac{2v_1v_2}{v_1+v_2} = \\frac{2(60)(40)}{60+40} = \\frac{4800}{100} = 48 \\, \\text{km/h} $$\n\nANSWER: 48 km/h"
+  }
+]
